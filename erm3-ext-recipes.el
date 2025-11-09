@@ -33,7 +33,7 @@
        ,org
        "/"
        ,repo
-       ".git"
+       (? ".git")
        eos))
 
 ;;;###autoload
