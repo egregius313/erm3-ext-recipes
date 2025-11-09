@@ -9,7 +9,7 @@
 ;; Version: 0.0.1
 ;; Keywords: convenience
 ;; Homepage: https://github.com/egregius313/erm3-ext-recipes
-;; Package-Requires: ((emacs "24.3") (yasnippet "0.8.0"))
+;; Package-Requires: ((emacs "24.3") (yasnippet "0.8.0") (magit "3.0.0"))
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
