@@ -23,16 +23,30 @@
 (require 'magit)
 (require 'yasnippet)
 
+(defmacro erm3-ext-recipes-github-repo (org repo)
+  "Generate regexp matching urls for the GitHub repo associated with `ORG' and
+`REPO'."
+  `(rx bos
+       (? (or "https://" "git@"))
+       "github.com"
+       (or ?: ?/)
+       ,org
+       "/"
+       ,repo
+       ".git"
+       eos))
+
 ;;;###autoload
 (defun erm3-ext-recipes-in-recipes-file-p ()
-  "Determine if the file for the current buffer is the recipes.org file"
-  (let ((remotes (cl-loop for remote in (magit-list-remotes)
-                          for remote-url = (magit-get (format "remote.%s.url" remote))
-                          collect remote-url)))
-    (and (or (member "git@github.com:egregius313/recipes" remotes)
-             (member "https://github.com/egregius313/recipes" remotes))
-         (string= (magit-file-relative-name)
-                  "recipes.org"))))
+  "Determine if the file for the current buffer is the recipes.org file."
+  (let* ((repo-rx (erm3-ext-recipes-github-repo "egregius313" "recipes"))
+         (is-recipes (cl-loop for remote in (magit-list-remotes)
+                              for remote-url = (magit-get (format "remote.%s.url" remote))
+                              when (string-match-p repo-rx remote-url)
+                              return t)))
+    (and
+     is-recipes
+     (string= (magit-file-relative-name) "recipes.org"))))
 
 (defconst erm3-ext-recipes-snippets-dir
   (expand-file-name
