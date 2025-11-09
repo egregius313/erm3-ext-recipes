@@ -2,6 +2,6 @@
 # name: quarter-cup
 # key: 14c
 # group: cookbook
-# condition: (equal (f-filename buffer-file-name) "recipes.org")
+# condition: (erm3-ext-recipes-in-recipes-file-p)
 # --
 1/4 cup

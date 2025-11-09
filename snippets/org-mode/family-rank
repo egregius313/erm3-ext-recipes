@@ -2,7 +2,7 @@
 # name: family-rank
 # uuid:
 # key: frank
-# condition: t
+# condition: (erm3-ext-recipes-in-recipes-file-p)
 # group: cookbook.rankings
 # --
 | Family    | \Stars{$1} |

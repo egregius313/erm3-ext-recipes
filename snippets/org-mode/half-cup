@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: half cup
 # key: 12c
-# condition: (equal (f-filename buffer-file-name) "recipes.org")
+# group:
+# condition: (erm3-ext-recipes-in-recipes-file-p)
 # --
 1/2 cup

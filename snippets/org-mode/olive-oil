@@ -3,6 +3,6 @@
 # uuid:
 # key: oo
 # group: cookbook
-# condition: (equal (f-filename buffer-file-name) "recipes.org")
+# condition: (erm3-ext-recipes-in-recipes-file-p)
 # --
 olive oil

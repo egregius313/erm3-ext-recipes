@@ -2,6 +2,6 @@
 # name: boneless-skinless-chicken-thigh
 # key: bsct
 # group: cookbook
-# condition: (equal (f-filename buffer-file-name) "recipes.org")
+# condition: (erm3-ext-recipes-in-recipes-file-p)
 # --
 boneless skinless chicken thigh
