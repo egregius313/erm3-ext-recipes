@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: half cup
 # key: 12c
-# group:
+# group: cookbook
 # condition: (erm3-ext-recipes-in-recipes-file-p)
 # --
 1/2 cup

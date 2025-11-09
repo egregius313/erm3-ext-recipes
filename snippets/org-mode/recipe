@@ -2,6 +2,7 @@
 # name: recipe
 # key: recipe
 # condition: (erm3-ext-recipes-in-recipes-file-p)
+# group: cookbook
 # --
 * $1
 
