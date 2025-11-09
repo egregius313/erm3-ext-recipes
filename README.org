@@ -1,0 +1,12 @@
+#+title: ~erm3-ext-recipes~
+
+#+link: github https://github.com/%s
+
+#+begin_quote
+[!NOTE]
+This repository is only meant to be used in conjunction with the [[github:egregius313/recipes][egregius313/recipes]]
+repository.
+#+end_quote
+
+Utility library providing functionality for helping write recipes in the
+recipes.org file.
