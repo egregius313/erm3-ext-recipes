@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: boneless-skinless-chicken-breast
+# uuid:
+# key: bscb
+# group: cookbook
+# condition: (equal (f-filename buffer-file-name) "recipes.org")
+# --
+boneless skinless chicken breast

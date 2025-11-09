@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: half cup
+# key: 12c
+# condition: (equal (f-filename buffer-file-name) "recipes.org")
+# --
+1/2 cup

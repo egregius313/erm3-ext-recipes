@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: apartment rank
+# uuid:
+# key: arank
+# condition: t
+# group: cookbook.rankings
+# --
+| Apartment | \Stars{$1} |

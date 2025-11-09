@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: all purpose flour
+# uuid:
+# key: apf
+# group: cookbook
+# condition: (equal (f-filename buffer-file-name) "recipes.org")
+# --
+all purpose flour

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: quarter-cup
+# key: 14c
+# group: cookbook
+# condition: (equal (f-filename buffer-file-name) "recipes.org")
+# --
+1/4 cup
