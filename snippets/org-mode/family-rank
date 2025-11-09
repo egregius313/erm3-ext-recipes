@@ -1,6 +1,5 @@
 # -*- mode: snippet -*-
 # name: family-rank
-# uuid:
 # key: frank
 # condition: (erm3-ext-recipes-in-recipes-file-p)
 # group: cookbook.rankings

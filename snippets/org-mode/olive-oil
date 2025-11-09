@@ -1,6 +1,5 @@
 # -*- mode: snippet -*-
 # name: olive-oil
-# uuid:
 # key: oo
 # group: cookbook
 # condition: (erm3-ext-recipes-in-recipes-file-p)

@@ -1,6 +1,5 @@
 # -*- mode: snippet -*-
 # name: all purpose flour
-# uuid:
 # key: apf
 # group: cookbook
 # condition: (erm3-ext-recipes-in-recipes-file-p)

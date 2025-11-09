@@ -1,6 +1,5 @@
 # -*- mode: snippet -*-
 # name: apartment rank
-# uuid:
 # key: arank
 # condition: (erm3-ext-recipes-in-recipes-file-p)
 # group: cookbook.rankings

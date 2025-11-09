@@ -1,6 +1,5 @@
 # -*- mode: snippet -*-
 # name: salt and pepper
-# uuid:
 # key: snp
 # group: cookbook
 # condition: (erm3-ext-recipes-in-recipes-file-p)

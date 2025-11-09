@@ -1,6 +1,5 @@
 # -*- mode: snippet -*-
 # name: boneless-skinless-chicken-breast
-# uuid:
 # key: bscb
 # group: cookbook
 # condition: (erm3-ext-recipes-in-recipes-file-p)
