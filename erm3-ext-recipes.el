@@ -18,7 +18,21 @@
 ;; Additional functionality and snippets for the `egregius313/recipes' repo.
 ;;
 ;;; Code:
+(eval-when-compile
+  (require 'cl-lib))
+(require 'magit)
 (require 'yasnippet)
+
+;;;###autoload
+(defun erm3-ext-recipes-in-recipes-file-p ()
+  "Determine if the file for the current buffer is the recipes.org file"
+  (let ((remotes (cl-loop for remote in (magit-list-remotes)
+                          for remote-url = (magit-get (format "remote.%s.url" remote))
+                          collect remote-url)))
+    (and (or (member "git@github.com:egregius313/recipes" remotes)
+             (member "https://github.com/egregius313/recipes" remotes))
+         (string= (magit-file-relative-name)
+                  "recipes.org"))))
 
 (defconst erm3-ext-recipes-snippets-dir
   (expand-file-name
